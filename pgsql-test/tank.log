@@ -1,0 +1,693 @@
+2017-10-10 16:37:46,700 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 16:37:46,701 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 16:37:46,710 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 16:37:46,759 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 16:37:46,759 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 16:50:13,092 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 16:50:13,093 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 16:50:13,102 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 16:50:13,148 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 16:50:13,149 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 17:04:34,999 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 17:04:35,000 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 17:04:35,009 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 17:04:35,067 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 17:04:35,067 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 17:04:35,112 [WARNING] yandextank.config_converter.converter converter.py:264	Unknown option Bfg:db
+2017-10-10 17:04:35,114 [INFO] yandextank.config_converter.converter converter.py:487	Converted config:
+bfg:
+  ammo_type: line
+  ammofile: example.sql
+  db: postgresql+jdbc://postgres:password@10.0.2.15:6000/postgres
+  enabled: true
+  gun_type: sql
+  instances: 10
+  load_profile: {load_type: rps, schedule: 'line(1,5,20)'}
+  loop: 10
+  package: yandextank.plugins.Bfg
+core: {}
+phantom: {enabled: false}
+
+2017-10-10 17:04:35,178 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): /tmp/tmpdOISIz_pre-validation-config.yaml
+2017-10-10 17:04:35,178 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): tank.log
+2017-10-10 17:04:35,390 [DEBUG] yandextank.core.tankcore tankcore.py:479	Releasing lock: /var/lock/lunapark_mBpPR3.lock
+2017-10-10 17:04:35,391 [ERROR] root cli.py:91	Exception: Validation error:
+bfg:
+  db: [unknown field]
+
+2017-10-10 17:04:35,410 [DEBUG] root cli.py:92	Exception: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/cli.py", line 87, in main
+    worker.configure()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 353, in configure
+    self.core.get_lock(self.options.ignore_lock, self.lock_dir)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 471, in get_lock
+    self.config.save(self.lock_file)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 121, in save
+    [self.validated,
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 110, in validated
+    self._validated = self.__validate()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 162, in __validate
+    raise ValidationError((dict(errors)))
+ValidationError: Validation error:
+bfg:
+  db: [unknown field]
+
+
+2017-10-10 17:05:21,619 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 17:05:21,620 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 17:05:21,629 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 17:05:21,687 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 17:05:21,687 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 17:06:07,406 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 17:06:07,407 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 17:06:07,416 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 17:06:07,473 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 17:06:07,473 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 17:06:07,518 [WARNING] yandextank.config_converter.converter converter.py:264	Unknown option Bfg:db
+2017-10-10 17:06:07,523 [INFO] yandextank.config_converter.converter converter.py:487	Converted config:
+bfg:
+  ammo_type: line
+  ammofile: example.sql
+  db: postgresql://postgres:password@10.0.2.15:6000/postgres
+  enabled: true
+  gun_type: sql
+  instances: 10
+  load_profile: {load_type: rps, schedule: 'line(1,5,20)'}
+  loop: 10
+  package: yandextank.plugins.Bfg
+core: {}
+phantom: {enabled: false}
+
+2017-10-10 17:06:07,558 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): /tmp/tmpRn65CL_pre-validation-config.yaml
+2017-10-10 17:06:07,559 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): tank.log
+2017-10-10 17:06:07,691 [DEBUG] yandextank.core.tankcore tankcore.py:479	Releasing lock: /var/lock/lunapark_bFpCG0.lock
+2017-10-10 17:06:07,691 [ERROR] root cli.py:91	Exception: Validation error:
+bfg:
+  db: [unknown field]
+
+2017-10-10 17:06:07,692 [DEBUG] root cli.py:92	Exception: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/cli.py", line 87, in main
+    worker.configure()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 353, in configure
+    self.core.get_lock(self.options.ignore_lock, self.lock_dir)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 471, in get_lock
+    self.config.save(self.lock_file)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 121, in save
+    [self.validated,
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 110, in validated
+    self._validated = self.__validate()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 162, in __validate
+    raise ValidationError((dict(errors)))
+ValidationError: Validation error:
+bfg:
+  db: [unknown field]
+
+
+2017-10-10 17:08:29,989 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 17:08:29,990 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 17:08:30,000 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 17:08:30,059 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 17:08:30,060 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 17:08:30,109 [INFO] yandextank.config_converter.converter converter.py:487	Converted config:
+bfg:
+  ammo_type: line
+  ammofile: example.sql
+  enabled: true
+  gun_type: sql
+  instances: 10
+  load_profile: {load_type: rps, schedule: 'line(1,5,20)'}
+  loop: 10
+  package: yandextank.plugins.Bfg
+core: {}
+phantom: {enabled: false}
+
+2017-10-10 17:08:30,145 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): /tmp/tmpIS1uLy_pre-validation-config.yaml
+2017-10-10 17:08:30,146 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): tank.log
+2017-10-10 17:08:30,279 [DEBUG] yandextank.core.tankcore tankcore.py:479	Releasing lock: /var/lock/lunapark_gxrhzv.lock
+2017-10-10 17:08:30,279 [ERROR] root cli.py:91	Exception: Validation error:
+bfg:
+  db: [unknown field]
+
+2017-10-10 17:08:30,280 [DEBUG] root cli.py:92	Exception: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/cli.py", line 87, in main
+    worker.configure()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 353, in configure
+    self.core.get_lock(self.options.ignore_lock, self.lock_dir)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 471, in get_lock
+    self.config.save(self.lock_file)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 121, in save
+    [self.validated,
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 110, in validated
+    self._validated = self.__validate()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 162, in __validate
+    raise ValidationError((dict(errors)))
+ValidationError: Validation error:
+bfg:
+  db: [unknown field]
+
+
+2017-10-10 17:13:28,848 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 17:13:28,849 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 17:13:28,858 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 17:13:28,906 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 17:13:28,910 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 17:13:28,948 [WARNING] yandextank.config_converter.converter converter.py:264	Unknown option Bfg:db
+2017-10-10 17:13:28,953 [INFO] yandextank.config_converter.converter converter.py:487	Converted config:
+bfg:
+  ammo_type: line
+  ammofile: example.sql
+  db: postgres+zxjdbc://postgres:password@10.0.2.15:6000/postgres
+  enabled: true
+  gun_type: sql
+  instances: 10
+  load_profile: {load_type: rps, schedule: 'line(1,5,20)'}
+  loop: 10
+  package: yandextank.plugins.Bfg
+core: {}
+phantom: {enabled: false}
+
+2017-10-10 17:13:28,984 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): /tmp/tmpT4jRa7_pre-validation-config.yaml
+2017-10-10 17:13:28,984 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): tank.log
+2017-10-10 17:13:29,121 [DEBUG] yandextank.core.tankcore tankcore.py:479	Releasing lock: /var/lock/lunapark_47ArlU.lock
+2017-10-10 17:13:29,122 [ERROR] root cli.py:91	Exception: Validation error:
+bfg:
+  db: [unknown field]
+
+2017-10-10 17:13:29,123 [DEBUG] root cli.py:92	Exception: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/cli.py", line 87, in main
+    worker.configure()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 353, in configure
+    self.core.get_lock(self.options.ignore_lock, self.lock_dir)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 471, in get_lock
+    self.config.save(self.lock_file)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 121, in save
+    [self.validated,
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 110, in validated
+    self._validated = self.__validate()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 162, in __validate
+    raise ValidationError((dict(errors)))
+ValidationError: Validation error:
+bfg:
+  db: [unknown field]
+
+
+2017-10-10 17:15:36,368 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 17:15:36,369 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 17:15:36,378 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 17:15:36,434 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 17:15:36,434 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 17:15:36,481 [WARNING] yandextank.config_converter.converter converter.py:264	Unknown option Bfg:db
+2017-10-10 17:15:36,483 [INFO] yandextank.config_converter.converter converter.py:487	Converted config:
+bfg:
+  ammo_type: line
+  ammofile: example.sql
+  db: psql://postgres:password@10.0.2.15:6000/postgres
+  enabled: true
+  gun_type: sql
+  instances: 10
+  load_profile: {load_type: rps, schedule: 'line(1,5,20)'}
+  loop: 10
+  package: yandextank.plugins.Bfg
+core: {}
+phantom: {enabled: false}
+
+2017-10-10 17:15:36,526 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): /tmp/tmp0ED57x_pre-validation-config.yaml
+2017-10-10 17:15:36,526 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): tank.log
+2017-10-10 17:15:36,655 [DEBUG] yandextank.core.tankcore tankcore.py:479	Releasing lock: /var/lock/lunapark_k6w79B.lock
+2017-10-10 17:15:36,655 [ERROR] root cli.py:91	Exception: Validation error:
+bfg:
+  db: [unknown field]
+
+2017-10-10 17:15:36,657 [DEBUG] root cli.py:92	Exception: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/cli.py", line 87, in main
+    worker.configure()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 353, in configure
+    self.core.get_lock(self.options.ignore_lock, self.lock_dir)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 471, in get_lock
+    self.config.save(self.lock_file)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 121, in save
+    [self.validated,
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 110, in validated
+    self._validated = self.__validate()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 162, in __validate
+    raise ValidationError((dict(errors)))
+ValidationError: Validation error:
+bfg:
+  db: [unknown field]
+
+
+2017-10-10 17:16:05,139 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 17:16:05,140 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 17:16:05,149 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 17:16:05,205 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 17:16:05,206 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 17:16:05,251 [WARNING] yandextank.config_converter.converter converter.py:264	Unknown option Bfg:db
+2017-10-10 17:16:05,254 [INFO] yandextank.config_converter.converter converter.py:487	Converted config:
+bfg:
+  ammo_type: line
+  ammofile: example.sql
+  db: postgresql+zxjdbc://postgres:password@10.0.2.15:6000/postgres
+  enabled: true
+  gun_type: sql
+  instances: 10
+  load_profile: {load_type: rps, schedule: 'line(1,5,20)'}
+  loop: 10
+  package: yandextank.plugins.Bfg
+core: {}
+phantom: {enabled: false}
+
+2017-10-10 17:16:05,287 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): /tmp/tmpi2mpGX_pre-validation-config.yaml
+2017-10-10 17:16:05,287 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): tank.log
+2017-10-10 17:16:05,419 [DEBUG] yandextank.core.tankcore tankcore.py:479	Releasing lock: /var/lock/lunapark_DCmoab.lock
+2017-10-10 17:16:05,420 [ERROR] root cli.py:91	Exception: Validation error:
+bfg:
+  db: [unknown field]
+
+2017-10-10 17:16:05,420 [DEBUG] root cli.py:92	Exception: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/cli.py", line 87, in main
+    worker.configure()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 353, in configure
+    self.core.get_lock(self.options.ignore_lock, self.lock_dir)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 471, in get_lock
+    self.config.save(self.lock_file)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 121, in save
+    [self.validated,
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 110, in validated
+    self._validated = self.__validate()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 162, in __validate
+    raise ValidationError((dict(errors)))
+ValidationError: Validation error:
+bfg:
+  db: [unknown field]
+
+
+2017-10-10 17:17:31,168 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 17:17:31,169 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 17:17:31,178 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 17:17:31,233 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 17:17:31,233 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 17:17:31,277 [WARNING] yandextank.config_converter.converter converter.py:264	Unknown option Bfg:db
+2017-10-10 17:17:31,279 [INFO] yandextank.config_converter.converter converter.py:487	Converted config:
+bfg:
+  ammo_type: line
+  ammofile: example.sql
+  db: postgresql+zxjdbc://postgres:password@10.0.2.15/postgres
+  enabled: true
+  gun_type: sql
+  instances: 10
+  load_profile: {load_type: rps, schedule: 'line(1,5,20)'}
+  loop: 10
+  package: yandextank.plugins.Bfg
+core: {}
+phantom: {enabled: false}
+
+2017-10-10 17:17:31,313 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): /tmp/tmpTqCWW7_pre-validation-config.yaml
+2017-10-10 17:17:31,313 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): tank.log
+2017-10-10 17:17:31,444 [DEBUG] yandextank.core.tankcore tankcore.py:479	Releasing lock: /var/lock/lunapark_yUECg9.lock
+2017-10-10 17:17:31,444 [ERROR] root cli.py:91	Exception: Validation error:
+bfg:
+  db: [unknown field]
+
+2017-10-10 17:17:31,445 [DEBUG] root cli.py:92	Exception: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/cli.py", line 87, in main
+    worker.configure()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 353, in configure
+    self.core.get_lock(self.options.ignore_lock, self.lock_dir)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 471, in get_lock
+    self.config.save(self.lock_file)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 121, in save
+    [self.validated,
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 110, in validated
+    self._validated = self.__validate()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 162, in __validate
+    raise ValidationError((dict(errors)))
+ValidationError: Validation error:
+bfg:
+  db: [unknown field]
+
+
+2017-10-10 17:17:58,104 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 17:17:58,105 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 17:17:58,114 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 17:17:58,168 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 17:17:58,169 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 17:24:04,786 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 17:24:04,787 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 17:24:04,796 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 17:24:04,850 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 17:24:04,850 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 17:24:04,896 [INFO] yandextank.config_converter.converter converter.py:487	Converted config:
+bfg:
+  ammo_type: line
+  ammofile: example.sql
+  enabled: true
+  gun_type: sql
+  instances: 10
+  load_profile: {load_type: rps, schedule: 'line(1,5,20)'}
+  loop: 10
+  package: yandextank.plugins.Bfg
+core: {}
+phantom: {enabled: false}
+
+2017-10-10 17:24:04,930 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): /tmp/tmpUC9Jy8_pre-validation-config.yaml
+2017-10-10 17:24:04,931 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): tank.log
+2017-10-10 17:24:05,065 [DEBUG] yandextank.core.tankcore tankcore.py:479	Releasing lock: /var/lock/lunapark_QvRgEG.lock
+2017-10-10 17:24:05,066 [ERROR] root cli.py:91	Exception: Validation error:
+bfg:
+  db: [unknown field]
+
+2017-10-10 17:24:05,066 [DEBUG] root cli.py:92	Exception: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/cli.py", line 87, in main
+    worker.configure()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 353, in configure
+    self.core.get_lock(self.options.ignore_lock, self.lock_dir)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 471, in get_lock
+    self.config.save(self.lock_file)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 121, in save
+    [self.validated,
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 110, in validated
+    self._validated = self.__validate()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 162, in __validate
+    raise ValidationError((dict(errors)))
+ValidationError: Validation error:
+bfg:
+  db: [unknown field]
+
+
+2017-10-10 17:25:11,222 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 17:25:11,223 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 17:25:11,232 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 17:25:11,291 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 17:25:11,291 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 17:25:11,335 [WARNING] yandextank.config_converter.converter converter.py:264	Unknown option Bfg:db
+2017-10-10 17:25:11,338 [INFO] yandextank.config_converter.converter converter.py:487	Converted config:
+bfg:
+  ammo_type: line
+  ammofile: example.sql
+  db: postgresql+psycopg2://postgres:password@10.0.2.15/postgres
+  enabled: true
+  gun_type: sql
+  instances: 10
+  load_profile: {load_type: rps, schedule: 'line(1,5,20)'}
+  loop: 10
+  package: yandextank.plugins.Bfg
+core: {}
+phantom: {enabled: false}
+
+2017-10-10 17:25:11,373 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): /tmp/tmpPETPVQ_pre-validation-config.yaml
+2017-10-10 17:25:11,373 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): tank.log
+2017-10-10 17:25:11,506 [DEBUG] yandextank.core.tankcore tankcore.py:479	Releasing lock: /var/lock/lunapark_g8CDgU.lock
+2017-10-10 17:25:11,507 [ERROR] root cli.py:91	Exception: Validation error:
+bfg:
+  db: [unknown field]
+
+2017-10-10 17:25:11,508 [DEBUG] root cli.py:92	Exception: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/cli.py", line 87, in main
+    worker.configure()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 353, in configure
+    self.core.get_lock(self.options.ignore_lock, self.lock_dir)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 471, in get_lock
+    self.config.save(self.lock_file)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 121, in save
+    [self.validated,
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 110, in validated
+    self._validated = self.__validate()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 162, in __validate
+    raise ValidationError((dict(errors)))
+ValidationError: Validation error:
+bfg:
+  db: [unknown field]
+
+
+2017-10-10 17:25:31,492 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 17:25:31,493 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 17:25:31,502 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 17:25:31,558 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 17:25:31,558 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 17:25:31,602 [WARNING] yandextank.config_converter.converter converter.py:264	Unknown option Bfg:db
+2017-10-10 17:25:31,605 [INFO] yandextank.config_converter.converter converter.py:487	Converted config:
+bfg:
+  ammo_type: line
+  ammofile: example.sql
+  db: postgresql://postgres:password@10.0.2.15/postgres
+  enabled: true
+  gun_type: sql
+  instances: 10
+  load_profile: {load_type: rps, schedule: 'line(1,5,20)'}
+  loop: 10
+  package: yandextank.plugins.Bfg
+core: {}
+phantom: {enabled: false}
+
+2017-10-10 17:25:31,639 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): /tmp/tmpGj28HZ_pre-validation-config.yaml
+2017-10-10 17:25:31,639 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): tank.log
+2017-10-10 17:25:31,772 [DEBUG] yandextank.core.tankcore tankcore.py:479	Releasing lock: /var/lock/lunapark_8sUyHy.lock
+2017-10-10 17:25:31,772 [ERROR] root cli.py:91	Exception: Validation error:
+bfg:
+  db: [unknown field]
+
+2017-10-10 17:25:31,773 [DEBUG] root cli.py:92	Exception: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/cli.py", line 87, in main
+    worker.configure()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 353, in configure
+    self.core.get_lock(self.options.ignore_lock, self.lock_dir)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 471, in get_lock
+    self.config.save(self.lock_file)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 121, in save
+    [self.validated,
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 110, in validated
+    self._validated = self.__validate()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 162, in __validate
+    raise ValidationError((dict(errors)))
+ValidationError: Validation error:
+bfg:
+  db: [unknown field]
+
+
+2017-10-10 17:26:23,711 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 17:26:23,712 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 17:26:23,737 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 17:26:23,809 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 17:26:23,810 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 17:26:23,881 [WARNING] yandextank.config_converter.converter converter.py:264	Unknown option Bfg:db
+2017-10-10 17:26:23,886 [INFO] yandextank.config_converter.converter converter.py:487	Converted config:
+bfg:
+  ammo_type: line
+  ammofile: example.sql
+  db: postgresql://postgres:password@localhost:6000/postgres
+  enabled: true
+  gun_type: sql
+  instances: 10
+  load_profile: {load_type: rps, schedule: 'line(1,5,20)'}
+  loop: 10
+  package: yandextank.plugins.Bfg
+core: {}
+phantom: {enabled: false}
+
+2017-10-10 17:26:23,949 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): /tmp/tmpbOjXaZ_pre-validation-config.yaml
+2017-10-10 17:26:23,949 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): tank.log
+2017-10-10 17:26:24,195 [DEBUG] yandextank.core.tankcore tankcore.py:479	Releasing lock: /var/lock/lunapark_J7F_OJ.lock
+2017-10-10 17:26:24,196 [ERROR] root cli.py:91	Exception: Validation error:
+bfg:
+  db: [unknown field]
+
+2017-10-10 17:26:24,198 [DEBUG] root cli.py:92	Exception: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/cli.py", line 87, in main
+    worker.configure()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 353, in configure
+    self.core.get_lock(self.options.ignore_lock, self.lock_dir)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 471, in get_lock
+    self.config.save(self.lock_file)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 121, in save
+    [self.validated,
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 110, in validated
+    self._validated = self.__validate()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 162, in __validate
+    raise ValidationError((dict(errors)))
+ValidationError: Validation error:
+bfg:
+  db: [unknown field]
+
+
+2017-10-10 17:59:10,856 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 17:59:10,858 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 17:59:10,867 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 17:59:10,944 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 17:59:10,945 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 17:59:10,991 [INFO] yandextank.config_converter.converter converter.py:487	Converted config:
+bfg:
+  ammo_type: line
+  ammofile: example.sql
+  enabled: true
+  gun_config: {}
+  gun_type: ultimate
+  instances: 10
+  load_profile: {load_type: rps, schedule: 'line(1,5,20)'}
+  loop: 10
+  package: yandextank.plugins.Bfg
+core: {}
+phantom: {enabled: false}
+
+2017-10-10 17:59:11,024 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): /tmp/tmp4x2Eo0_pre-validation-config.yaml
+2017-10-10 17:59:11,025 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): tank.log
+2017-10-10 17:59:11,166 [DEBUG] yandextank.core.tankcore tankcore.py:479	Releasing lock: /var/lock/lunapark_ORU4gt.lock
+2017-10-10 17:59:11,167 [ERROR] root cli.py:91	Exception: Validation error:
+bfg:
+  db: [unknown field]
+
+2017-10-10 17:59:11,169 [DEBUG] root cli.py:92	Exception: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/cli.py", line 87, in main
+    worker.configure()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 353, in configure
+    self.core.get_lock(self.options.ignore_lock, self.lock_dir)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 471, in get_lock
+    self.config.save(self.lock_file)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 121, in save
+    [self.validated,
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 110, in validated
+    self._validated = self.__validate()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 162, in __validate
+    raise ValidationError((dict(errors)))
+ValidationError: Validation error:
+bfg:
+  db: [unknown field]
+
+
+2017-10-10 18:00:07,037 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 18:00:07,038 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 18:00:07,061 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 18:00:07,127 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 18:00:07,128 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 18:00:07,173 [INFO] yandextank.config_converter.converter converter.py:487	Converted config:
+bfg:
+  enabled: true
+  gun_config: {}
+  gun_type: ultimate
+  instances: 10
+  load_profile: {load_type: rps, schedule: 'line(1,5,20)'}
+  loop: 10
+  package: yandextank.plugins.Bfg
+core: {}
+phantom: {enabled: false}
+
+2017-10-10 18:00:07,204 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): /tmp/tmpa50fWW_pre-validation-config.yaml
+2017-10-10 18:00:07,204 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): tank.log
+2017-10-10 18:00:07,363 [DEBUG] yandextank.core.tankcore tankcore.py:479	Releasing lock: /var/lock/lunapark_TZZimF.lock
+2017-10-10 18:00:07,364 [ERROR] root cli.py:91	Exception: Validation error:
+bfg:
+  db: [unknown field]
+
+2017-10-10 18:00:07,365 [DEBUG] root cli.py:92	Exception: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/cli.py", line 87, in main
+    worker.configure()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 353, in configure
+    self.core.get_lock(self.options.ignore_lock, self.lock_dir)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 471, in get_lock
+    self.config.save(self.lock_file)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 121, in save
+    [self.validated,
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 110, in validated
+    self._validated = self.__validate()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 162, in __validate
+    raise ValidationError((dict(errors)))
+ValidationError: Validation error:
+bfg:
+  db: [unknown field]
+
+
+2017-10-10 18:26:43,547 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 18:26:43,548 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 18:26:43,557 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 18:26:43,613 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 18:26:43,613 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 18:27:13,505 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 18:27:13,507 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 18:27:13,516 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 18:27:13,575 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 18:27:13,576 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 18:27:13,620 [WARNING] yandextank.config_converter.converter converter.py:264	Unknown option Bfg:db
+2017-10-10 18:27:13,623 [INFO] yandextank.config_converter.converter converter.py:487	Converted config:
+bfg:
+  address: 10.0.2.15:6000
+  db: postgresql+zxjdbc://postgres:password@10.0.2.15:6000/postgres
+  enabled: true
+  gun_type: sql
+  instances: 10
+  load_profile: {load_type: rps, schedule: 'line(1,5,20)'}
+  loop: 10
+  package: yandextank.plugins.Bfg
+core: {}
+phantom: {enabled: false}
+
+2017-10-10 18:27:13,657 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): /tmp/tmpwIwdb5_pre-validation-config.yaml
+2017-10-10 18:27:13,657 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): tank.log
+2017-10-10 18:27:13,789 [DEBUG] yandextank.core.tankcore tankcore.py:479	Releasing lock: /var/lock/lunapark_2KEyNX.lock
+2017-10-10 18:27:13,790 [ERROR] root cli.py:91	Exception: Validation error:
+bfg:
+  db: [unknown field]
+
+2017-10-10 18:27:13,791 [DEBUG] root cli.py:92	Exception: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/cli.py", line 87, in main
+    worker.configure()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 353, in configure
+    self.core.get_lock(self.options.ignore_lock, self.lock_dir)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 471, in get_lock
+    self.config.save(self.lock_file)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 121, in save
+    [self.validated,
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 110, in validated
+    self._validated = self.__validate()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 162, in __validate
+    raise ValidationError((dict(errors)))
+ValidationError: Validation error:
+bfg:
+  db: [unknown field]
+
+
+2017-10-10 18:27:43,530 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 18:27:43,531 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 18:27:43,540 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 18:27:43,596 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 18:27:43,597 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr
+2017-10-10 18:27:43,643 [INFO] yandextank.config_converter.converter converter.py:487	Converted config:
+bfg:
+  address: 10.0.2.15:6000
+  enabled: true
+  gun_type: sql
+  instances: 10
+  load_profile: {load_type: rps, schedule: 'line(1,5,20)'}
+  loop: 10
+  package: yandextank.plugins.Bfg
+core: {}
+phantom: {enabled: false}
+
+2017-10-10 18:27:43,675 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): /tmp/tmpeTGCE1_pre-validation-config.yaml
+2017-10-10 18:27:43,675 [DEBUG] yandextank.core.tankcore tankcore.py:439	Adding artifact file to collect (keep=False): tank.log
+2017-10-10 18:27:43,812 [DEBUG] yandextank.core.tankcore tankcore.py:479	Releasing lock: /var/lock/lunapark_cpfTmJ.lock
+2017-10-10 18:27:43,812 [ERROR] root cli.py:91	Exception: Validation error:
+bfg:
+  db: [unknown field]
+
+2017-10-10 18:27:43,813 [DEBUG] root cli.py:92	Exception: Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/cli.py", line 87, in main
+    worker.configure()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/consoleworker.py", line 353, in configure
+    self.core.get_lock(self.options.ignore_lock, self.lock_dir)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/core/tankcore.py", line 471, in get_lock
+    self.config.save(self.lock_file)
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 121, in save
+    [self.validated,
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 110, in validated
+    self._validated = self.__validate()
+  File "/usr/local/lib/python2.7/dist-packages/yandextank/validator/validator.py", line 162, in __validate
+    raise ValidationError((dict(errors)))
+ValidationError: Validation error:
+bfg:
+  db: [unknown field]
+
+
+2017-10-10 18:28:37,058 [DEBUG] pip.utils __init__.py:70	lzma module is not available
+2017-10-10 18:28:37,059 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: git
+2017-10-10 18:28:37,074 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: hg
+2017-10-10 18:28:37,125 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: svn
+2017-10-10 18:28:37,125 [DEBUG] pip.vcs __init__.py:60	Registered VCS backend: bzr

@@ -29,5 +29,5 @@ done
 
 echo "Load queries."
 # yandex.tank: ammo1 - instance, ammo2 - queries
-yandex-tank -c load.ini
+yandex-tank -c $path/load.ini
 exit 0

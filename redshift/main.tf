@@ -4,7 +4,7 @@ provider "aws" {
 	region = "eu-west-1"
 }
 
-resource "aws_redshift_cluster" "main_test_redshift_cluster" {
+resource "aws_redshift_cluster" "test_redshift_cluster" {
 	cluster_identifier = "${var.cluster_identifier}"
 	database_name = "${var.database_name}"
 	master_username = "${var.master_username}"
@@ -14,4 +14,6 @@ resource "aws_redshift_cluster" "main_test_redshift_cluster" {
 	number_of_nodes = "${var.number_of_nodes}"
 
 	port = "${var.cluster_port}"
+	
+	vpc_security_group_ids = ["${var.vpc_security_group_ids}"]
 }

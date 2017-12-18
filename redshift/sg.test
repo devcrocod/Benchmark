@@ -1,0 +1,32 @@
+# Security groups
+resource "aws_security_group" "storage_test" {
+	name = "${var.cluster_identifier}-redshift-access"
+	description = "Allow access to the cluster: ${var.cluster_identifier}"
+	vpc_id = "${var.redshift_vpc_id}"
+
+
+	ingress {
+		from_port   = 0
+		to_port     = 65535
+		protocol    = "tcp"
+		cidr_blocks = ["0.0.0.0/0"]
+	}
+
+	egress {
+		from_port   = 0
+		to_port     = 0
+		protocol    = "-1"
+		cidr_blocks = ["0.0.0.0/0"]
+	}
+}
+
+# Security group for redshift
+
+resource "aws_redshift_security_group" "storage_test" {
+	name = "${var.cluster_identifier}-sg"
+#	vpc_id = "${var.redshift_vpc_id}"
+
+	ingress {
+  		cidr = "10.0.0.0/24"
+  	}
+}
